@@ -19,6 +19,7 @@ function showKedu() {
 
 }
 
+
 function hideKollega () {
   kollegacontent.style.display = 'none';
 

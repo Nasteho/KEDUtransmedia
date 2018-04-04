@@ -179,7 +179,6 @@ button:hover {
 
 #keducontent{
   display: none;
-  display: flex;
   flex-direction: column;
   transform: translateY(3%);
   animation-name: slideup;
