@@ -129,8 +129,8 @@ button:hover {
 }
 
 .closebuttons {
-  align-self: center;
   padding-bottom: 50px;
+  
 }
 
 #kollegacontent p, #differentformcontent p, #keducontent p{
@@ -154,7 +154,7 @@ button:hover {
 }
 
 #kollegacontent{
-  display: none;
+  display: block;
 }
 
 #differentformcontent{
