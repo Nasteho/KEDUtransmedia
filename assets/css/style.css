@@ -48,7 +48,7 @@ main {
   flex-direction: row;
   align-self: center;
   margin: auto;
-  padding-bottom: 80px;
+  padding-bottom: 30px;
 }
 
 #boldheadline1 {
@@ -129,8 +129,15 @@ button:hover {
 }
 
 .closebuttons {
+  display: flex;
+  width: 50%;
   padding-bottom: 50px;
-  
+  margin: auto;
+
+}
+
+.closebuttons button {
+  margin: auto;
 }
 
 #kollegacontent p, #differentformcontent p, #keducontent p{
@@ -154,7 +161,7 @@ button:hover {
 }
 
 #kollegacontent{
-  display: block;
+  display: none;
 }
 
 #differentformcontent{
