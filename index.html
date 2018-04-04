@@ -7,39 +7,90 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta description="">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100i,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,400,700" rel="stylesheet">
   </head>
   <body>
     <main>
       <section id="visiblecontent">
-        <div>
-          <h1>Mine elever har mistet koncentrationen, hvad skal jeg stille op?</h1>
-        </div>
-        <div>
-          <img src="assets/images/kirsten.png" alt="billede af kvinde illustration">
-        </div>
-        <div>
-          <h1>HJÆLP KIRSTEN MED AT FINDE DEN BEDSTE LÆRINGSMETODE</h1>
-          <p>Kirsten skynder sig ud på gangen og møder tilfældigvis sin kollega Charlotte. Kirsten spørger Charlotte til råds om hvad hun skal gøre. De snakker frem og tilbage, men når ikke til en konklusion. Charlotte forlader Kisten med ‘’De bliver bedre i morgen’’. Kirsten fik ikke svar på hendes problem så derfor må hun søge andre løsninger. </p>
-        </div>
-        <div id="buttons">
-          <button class="optionbuttons" id="kollegabutton" onclick="showKollega()">SPØRG EN KOLLEGA TILRÅDS</button>
-          <button class="optionsbuttons" id="differentformbutton" onclick="showDifferentForm()">ÆNDRE LÆRINGSFORM</button>
-          <button class="optionbuttons" id="kedubutton" onclick="showKedu()">PRØV KEDU</button>
-        </div>
+          <div class="visiblecontentdivs">
+            <h1 id="boldheadline1">Mine elever har mistet koncentrationen, hvad skal jeg stille op?</h1>
+          </div>
+
+          <div id="imagecontainer" class="visiblecontentdivs">
+            <img src="assets/images/kirsten.png" alt="billede af kvinde illustration" id="kirsten">
+          </div>
+
+          <div id="headlinecontainer" class="visiblecontentdivs">
+            <h1 id="headline2">HJÆLP KIRSTEN MED AT FINDE DEN BEDSTE LÆRINGSMETODE</h1>
+            <p id="paragraphcontainer">Kirsten underviser sine elever, men
+               eleverne larmer fordi de har svært ved at koncentrere sig.
+               Tryk på knapperne og find ud af hvilken løsning der vil fungere
+               bedst for Kirsten.
+             </p>
+          </div>
+
+          <div id="buttons" >
+            <button class="optionbuttons" id="kollegabutton" onclick="showKollega()">SPØRG EN KOLLEGA TILRÅDS</button>
+            <button class="optionbuttons" id="differentformbutton" onclick="showDifferentForm()">ÆNDRE LÆRINGSFORM</button>
+            <button class="optionbuttons" id="kedubutton" onclick="showKedu()">PRØV KEDU</button>
+          </div>
       </section>
 
       <section id="hiddencontent">
-        <div id="kollegacontent">
+        <div id="kollegacontent" class="contentboxes">
           <div class="">
-            <h1>KIRSTEN SPØRGER EN KOLLEGA TIL RÅDS</h1>
+            <h1 class="boldheadline2">KIRSTEN SPØRGER EN KOLLEGA TIL RÅDS</h1>
           </div>
-          <div class=>
-            <p></p>
+          <div class="">
+            <img src="" alt="">
+          </div>
+          <div>
+            <p>Kirsten skynder sig ud på gangen og møder tilfældigvis sin
+              kollega Charlotte. Kirsten spørger Charlotte til råds om hvad
+              hun skal gøre. De snakker frem og tilbage, men når ikke til en konklusion.
+              Charlotte forlader Kisten med ‘’De bliver bedre i morgen’’. Kirsten fik ikke
+              svar på hendes problem så derfor må hun søge andre løsninger.
+            </p>
+          </div>
+          <div class="">
+            <button type="button" name="closeoption" onclick="hideKollega()"></button>
           </div>
         </div>
-        <div>
 
+        <div id="differentformcontent" class="contentboxes">
+          <div class="">
+            <h1 class="boldheadline2">KIRSTEN ÆNDRER SIN UNDERVISNINGSFORM</h1>
+          </div>
+          <div class="">
+            <img src="" alt="">
+          </div>
+          <div>
+            <p>Kirsten tænker at eleverne ikke kan koncentrere sig fordi de har siddet ved
+              deres borde i for lang tid. Derfor beder hun sine elever om at rejse sig og ryste
+              med armene og benene. Efter de har gjort dette i et stykke tid, beder hun sig om at sætte sig igen,
+              og hun håber de bliver koncentreret, med uden held da børnene igen bliver ved at snakke og larme igen.
+            </p>
+          </div>
+          <div class="">
+            <button type="button" class="optionbuttons" onclick="hideDifferentForm()"></button>
+          </div>
+        </div>
+
+        <div id="keducontent" class="contentboxes">
+          <div class="">
+            <img src="assets/images/kedulogo.png" alt="kedu logo">
+          </div>
+          <div>
+            <p>Efter en undervisningsdag er Kirsten hjemme.
+              Her begår hun sig på facebook, hvor hun ser et opslag fra Danmarks Lærerforening.
+              Det er et opslag som promovere for en platform ved navn KEDU som er et fællesskab for lærer
+              og et læringsredskab for robotten KUBO som er en robot da formidler tunge emner ned til simpel læring.
+              Kirsten klikker på ‘HØR MERE’.
+            </p>
+          </div>
+          <div>
+            <button type="button" name="closeoption" onclick="hideKedu()"></button>
+          </div>
         </div>
       </section>
     </main>
