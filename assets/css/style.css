@@ -48,6 +48,7 @@ main {
   flex-direction: row;
   align-self: center;
   margin: auto;
+  padding-bottom: 80px;
 }
 
 #boldheadline1 {
@@ -91,7 +92,7 @@ button {
   font-size: 12px;
   margin: 4px 2px;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 25px;
   border: 1px solid #00a19b;
   width: 250px;
   height: 50px;
@@ -115,5 +116,51 @@ button:hover {
 .boldheadline2 {
   padding: 55px 0 10px 0px;
   text-align: center;
+  font-size: 30px;
 
+}
+
+#kirsten2 {
+  width: 300px;
+  display: flex;
+  margin: auto;
+  align-self: center;
+  padding-top: 50px;
+}
+
+.closebuttons {
+  align-self: center;
+  padding-bottom: 50px;
+}
+
+#kollegacontent p, #differentformcontent p, #keducontent p{
+  padding: 40px 50px
+}
+
+#differentformcontent img {
+  width: 400px;
+  display: flex;
+  margin: auto;
+  align-self: center;
+  padding-top: 50px;
+}
+
+#keducontent img {
+  width: 300px;
+  display: flex;
+  margin: auto;
+  align-self: center;
+  padding-top: 50px;
+}
+
+#kollegacontent{
+  display: none;
+}
+
+#differentformcontent{
+  display: none;
+}
+
+#keducontent{
+  display: none;
 }
