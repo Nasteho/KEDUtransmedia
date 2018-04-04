@@ -36,7 +36,7 @@ main {
 }
 
 .visiblecontentdivs{
-  width: 50%;
+  width: 60%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -49,6 +49,7 @@ main {
   align-self: center;
   margin: auto;
   padding-bottom: 30px;
+  padding-top: 40px;
 }
 
 #boldheadline1 {
@@ -131,7 +132,7 @@ button:hover {
 .closebuttons {
   display: flex;
   width: 50%;
-  padding-bottom: 50px;
+
   margin: auto;
 
 }
@@ -140,8 +141,8 @@ button:hover {
   margin: auto;
 }
 
-#kollegacontent p, #differentformcontent p, #keducontent p{
-  padding: 40px 50px
+#kollegacontent p, #differentformcontent p, {
+  padding: 50px 50px
 }
 
 #differentformcontent img {
@@ -153,21 +154,86 @@ button:hover {
 }
 
 #keducontent img {
-  width: 300px;
+  width: 950px;
   display: flex;
   margin: auto;
   align-self: center;
-  padding-top: 50px;
+  padding-top: 20px;
+
 }
 
 #kollegacontent{
   display: none;
+  transform: translateY(3%);
+  animation-name: slideup;
+  animation-duration: 1s;
 }
 
 #differentformcontent{
   display: none;
+
+  transform: translateY(3%);
+  animation-name: slideup;
+  animation-duration: 1s;
 }
 
 #keducontent{
   display: none;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(3%);
+  animation-name: slideup;
+  animation-duration: 1s;
+}
+
+@keyframes slideup {
+0% {
+  transform: translateY(10%);
+  opacity: 0;
+}
+
+  100%  {
+            transform: translateY(3%);
+            opacity: 1;
+
+        }
+
+}
+
+#slogan {
+  text-align: center;
+  font-style: italic;
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 33px;
+
+}
+
+#hearmore {
+  margin-top: -100px;
+
+}
+
+#keducontent p{
+  padding-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#keducontent a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+.formkollega {
+  padding-bottom: 50px;
+  display: flex;
+  width: 50%;
+  margin: auto;
+}
+
+.formkollega button {
+  margin: auto;
 }

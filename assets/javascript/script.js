@@ -18,3 +18,12 @@ function showKedu() {
   keducontent.style.display = 'block';
 
 }
+
+function hideKollega () {
+  kollegacontent.style.display = 'none';
+
+}
+
+function hideDifferentForm() {
+  differentformcontent.style.display = 'none';
+}
