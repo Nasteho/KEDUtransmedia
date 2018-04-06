@@ -52,7 +52,7 @@ main {
   padding-top: 40px;
 }
 
-#boldheadline1 {
+.boldheadline1 {
   font-size: 44px;
   color: white;
   font-weight: 700;
@@ -235,4 +235,35 @@ button:hover {
 
 .formkollega button {
   margin: auto;
+}
+
+
+#kedupartp{
+  width: 60%;
+  margin: auto;
+}
+
+#headlinekedu {
+  width: 100%;
+  margin: auto;
+}
+
+#kedupart {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+
+}
+
+#nextbutton {
+  margin: auto;
+
+}
+
+#kedupartp img{
+  width: 700px;
+  display: flex;
+  margin: auto;
+  align-self: center;
+  padding-top: 50px;
 }
