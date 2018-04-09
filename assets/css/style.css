@@ -257,12 +257,14 @@ button:hover {
 
 #nextbutton {
   margin: auto;
+  padding-bottom: 20px;
 
 }
 
 #kedupartp img{
+  display: block;
   width: 700px;
-  display: flex;
+
   margin: auto;
   align-self: center;
   padding-top: 50px;
@@ -297,6 +299,17 @@ margin: auto;
 }
 
 #skattejagtquiz {
+  display: none;
+}
 
+
+#submit {
+  margin: 40px;
+  display: block;
+}
+
+#nextstep {
+  display: none;
+  margin: 40px;
 
 }

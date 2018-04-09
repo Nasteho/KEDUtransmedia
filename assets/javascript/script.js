@@ -31,22 +31,30 @@ function hideDifferentForm() {
 
 
 /*-------- transmedia se resultater -------*/
-var answers = ["1","3","2","1"],
-    tot = answers.length;
-
-function getCheckedValue( radioName ){
-    var radios = document.getElementsByName("radioName"); // Get radio group by-name
-    for(var y=0; y<radios.length; y++)
-      if(radios[y].checked) return radios[y].value; // return the checked value
+function showResults() {
+var score = 0;
+for(var i = 0; i <= 12; i++) {
+  var radios = document.getElementsByName('q'+i);
+  for(var j = 0; j < radios.length; j++) {
+    var radio = radios[j];
+    if(radio.value == "true" && radio.checked) {
+      score++;
+    }
+  }
 }
+        document.getElementById("resultsAnswers").innerHTML = "Correct Responses: " + score;
+        document.getElementById("resultsAnswers").style.color = "green";
+        document.getElementById("submit").style.display = 'none';
+        document.getElementById("nextstep").style.display = 'block';
+        document.getElementById("nextstep").style.backgroundColor = "red";
 
-function getScore(){
-  var score = 0;
-  for (var i=0; i<tot; i++)
-    if(getCheckedValue("question"+i)===answers[i]) score += 1; // increment only
-  return score;
-}
+      }
 
-function returnScore(){
-  alert("Your score is "+ getScore() +"/"+ tot);
+/*---------- */
+
+
+
+function hideThisShowSecond() {
+  kedupart.style.display = 'none';
+  skattejagtquiz.style.display = 'block';
 }
