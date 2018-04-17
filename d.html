@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>KEDU campaign</title>
+    <link rel="icon" type="image/png" sizes="12x12" href="assets/images/favicon.ico">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta description="">
+    <script type="text/javascript" src="assets/javascript/script.js"> </script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,400,700" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <section id="visiblecontent">
+          <div class="visiblecontentdivs">
+            <h1 class="boldheadline1">Mine elever har mistet koncentrationen, hvad skal jeg stille op?</h1>
+          </div>
+
+          <div id="imagecontainer" class="visiblecontentdivs">
+            <img src="assets/images/kirsten.png" alt="billede af kvinde illustration" id="kirsten">
+          </div>
+
+          <div id="headlinecontainer" class="visiblecontentdivs">
+            <h1 id="headline2">HJÆLP KIRSTEN MED AT FINDE DEN BEDSTE LÆRINGSMETODE</h1>
+            <p id="paragraphcontainer">Kirsten underviser sine elever, men
+               eleverne larmer fordi de har svært ved at koncentrere sig.
+               Tryk på knapperne og find ud af hvilken løsning der vil fungere
+               bedst for Kirsten.
+             </p>
+          </div>
+
+          <div id="buttons" >
+            <button class="optionbuttons" id="kollegabutton" onclick="showKollega()">SPØRG EN KOLLEGA TILRÅDS</button>
+            <button class="optionbuttons" id="differentformbutton" onclick="showDifferentForm()">ÆNDRE LÆRINGSFORM</button>
+            <button class="optionbuttons" id="kedubutton" onclick="showKedu()">PRØV KEDU</button>
+          </div>
+      </section>
+
+      <section id="hiddencontent">
+        <div id="kollegacontent" class="contentboxes">
+          <div class="">
+            <h1 class="boldheadline2">KIRSTEN SPØRGER EN KOLLEGA TIL RÅDS</h1>
+          </div>
+          <div class="">
+              <img src="assets/images/kirstenmedkollega.png" alt="kvinde med kollega" id="kirsten2">
+          </div>
+          <div>
+            <p>Kirsten skynder sig ud på gangen og møder tilfældigvis sin
+              kollega Charlotte. Kirsten spørger Charlotte til råds om hvad
+              hun skal gøre. De snakker frem og tilbage, men når ikke til en konklusion.
+              Charlotte forlader Kisten med ‘’De bliver bedre i morgen’’. Kirsten fik ikke
+              svar på hendes problem så derfor må hun søge andre løsninger.
+            </p>
+          </div>
+          <div class="formkollega">
+            <button type="button"  name="closeoption" onclick="hideKollega()">PRØV IGEN</button>
+          </div>
+        </div>
+
+        <div id="differentformcontent" class="contentboxes">
+          <div class="">
+            <h1 class="boldheadline2">KIRSTEN ÆNDRER SIN UNDERVISNINGSFORM</h1>
+          </div>
+          <div class="">
+            <img src="assets/images/differentform.png" alt="children jumping">
+          </div>
+          <div>
+            <p>Kirsten tænker at eleverne ikke kan koncentrere sig fordi de har siddet ved
+              deres borde i for lang tid. Derfor beder hun sine elever om at rejse sig og ryste
+              med armene og benene. Efter de har gjort dette i et stykke tid, beder hun sig om at sætte sig igen,
+              og hun håber de bliver koncentreret, med uden held da børnene igen bliver ved at snakke og larme igen.
+            </p>
+          </div>
+          <div class="formkollega">
+            <button type="button" onclick="hideDifferentForm()">PRØV IGEN</button>
+          </div>
+        </div>
+
+        <div id="keducontent" class="contentboxes">
+          <div class="">
+
+            <p id="slogan">We believe in educating the world!</p>
+          </div>
+          <div>
+            <p>Efter en undervisningsdag er Kirsten hjemme.
+              Her begår hun sig på facebook, hvor hun ser et opslag fra Danmarks Lærerforening.
+              Det er et opslag som promovere for en platform ved navn KEDU som er et fællesskab for lærer
+              og et læringsredskab for robotten KUBO som er en robot da formidler tunge emner ned til simpel læring.
+              Kirsten klikker på ‘HØR MERE’.
+            </p>
+            <img src="assets/images/keduimage.png" alt="kedu logo">
+          </div>
+          <div class="closebuttons">
+            <button type="button" name="closeoption" id="hearmore"><a href = "http://google.dk">HØR MERE</a></button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+  </body>
+</html>

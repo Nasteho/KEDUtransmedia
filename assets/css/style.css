@@ -1,7 +1,8 @@
 body{
   font-family: 'Lato', sans-serif;
-
-  background-color: #1b5c90;
+  margin: 0;
+  padding: 0;
+  background-color: #0679cb;
 }
 
 main {
@@ -53,10 +54,12 @@ main {
 }
 
 .boldheadline1 {
+  padding: 0px 170px;
   font-size: 44px;
   color: white;
   font-weight: 700;
   text-align: center;
+  line-height: 79px;
 }
 
 #headline2 {
@@ -76,6 +79,7 @@ p {
   color: white;
   font-weight: 100;
   font-size: 20px;
+  line-height: 40px;
 }
 
 h1 {
@@ -322,6 +326,8 @@ margin: auto;
 #italicp {
   font-weight: 100;
   font-style: italic;
+  padding-top: 72px;
+
 }
 
 a {
@@ -348,4 +354,23 @@ a {
   padding: 20px 0;
   width: 50%;
   display: flex;
+}
+
+
+#kubogif {
+  width: 1424px;
+}
+
+#keduimageimage {
+  width: 1424px;
+}
+
+.final {
+  border: 13px solid white;
+  margin: 62spx 83px;
+  margin-bottom: 35px;
+}
+
+video {
+  width: 1424px;
 }

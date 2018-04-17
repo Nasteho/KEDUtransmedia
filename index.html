@@ -12,92 +12,132 @@
   </head>
   <body>
     <main>
-      <section id="visiblecontent">
-          <div class="visiblecontentdivs">
-            <h1 class="boldheadline1">Mine elever har mistet koncentrationen, hvad skal jeg stille op?</h1>
-          </div>
+      <section id="kedupart">
+        <div id="headlinekedu">
+          <h1 class="boldheadline1">A community where teachers can share and get knowledge</h1>
+        </div>
 
-          <div id="imagecontainer" class="visiblecontentdivs">
-            <img src="assets/images/kirsten.png" alt="billede af kvinde illustration" id="kirsten">
-          </div>
+        <div id="kedupartp">
+          <p>KEDU er en læringsplatform, hvor lærer landet over kan inspireres af
+            hinanden og dele viden om robotten. Bliv en del af fællesskabet og deltag i diskussioner.
+            <img src="assets/images/keduimage 2.png" alt="kedu logo">
+          </p>
+        </div>
 
-          <div id="headlinecontainer" class="visiblecontentdivs">
-            <h1 id="headline2">HJÆLP KIRSTEN MED AT FINDE DEN BEDSTE LÆRINGSMETODE</h1>
-            <p id="paragraphcontainer">Kirsten underviser sine elever, men
-               eleverne larmer fordi de har svært ved at koncentrere sig.
-               Tryk på knapperne og find ud af hvilken løsning der vil fungere
-               bedst for Kirsten.
-             </p>
-          </div>
+        <div class="skattejagtpart">
+          <p>Er du klar til at teste din opmærksomhed og
+             se om du kan hjælpe Malene med at huske igen?</p>
+        </div>
 
-          <div id="buttons" >
-            <button class="optionbuttons" id="kollegabutton" onclick="showKollega()">SPØRG EN KOLLEGA TILRÅDS</button>
-            <button class="optionbuttons" id="differentformbutton" onclick="showDifferentForm()">ÆNDRE LÆRINGSFORM</button>
-            <button class="optionbuttons" id="kedubutton" onclick="showKedu()">PRØV KEDU</button>
-          </div>
+        <div id="nextbutton">
+          <button type="button" name="button" onclick="hideThisShowSecond()" >Næste</button>
+        </div>
       </section>
 
-      <section id="hiddencontent">
-        <div id="kollegacontent" class="contentboxes">
-          <div class="">
-            <h1 class="boldheadline2">KIRSTEN SPØRGER EN KOLLEGA TIL RÅDS</h1>
-          </div>
-          <div class="">
-              <img src="assets/images/kirstenmedkollega.png" alt="kvinde med kollega" id="kirsten2">
-          </div>
-          <div>
-            <p>Kirsten skynder sig ud på gangen og møder tilfældigvis sin
-              kollega Charlotte. Kirsten spørger Charlotte til råds om hvad
-              hun skal gøre. De snakker frem og tilbage, men når ikke til en konklusion.
-              Charlotte forlader Kisten med ‘’De bliver bedre i morgen’’. Kirsten fik ikke
-              svar på hendes problem så derfor må hun søge andre løsninger.
-            </p>
-          </div>
-          <div class="formkollega">
-            <button type="button"  name="closeoption" onclick="hideKollega()">PRØV IGEN</button>
-          </div>
+      <section id="skattejagtquiz">
+        <div class="boldheadline1">
+          <h1>Husker du rigtigt? Så se hvor mange informationer du huskede</h1>
         </div>
 
-        <div id="differentformcontent" class="contentboxes">
+        <form class="allquestions" name="quiz" method="post" name="buttons" id="quiz" onsubmit="return false">
+          <div class="question1">
+                <h2 class="boldheadline2">Hvor mange procent af jobs vil i 2034 være overtaget af robotter?</h2>
+                <input type="radio" name="q0" value="true"  class="radiobuttons">47%<br>
+                <input type="radio" name="q0" value="false"  class="radiobuttons">20%<br>
+                <input type="radio" name="q0" value="false"  class="radiobuttons">64%
+          </div>
+
+          <div class="question2">
+                <h2 class="boldheadline2">Hvilket hashtag har gennemgået i alle medier?</h2>
+                <input type="radio" name="q1" value="false"  class="radiobuttons">#iloveeducation<br>
+                <input type="radio" name="q1" value="false"  class="radiobuttons">#protectthekids<br>
+                <input type="radio" name="q1" value="true"  class="radiobuttons">#webeliveineducatingtheworld
+          </div>
+
+          <div class="question3">
+                <h2 class="boldheadline2">Hvad er KUBO?</h2>
+                <input type="radio" name="q3" value="false" class="radiobuttons">En terning<br>
+                <input type="radio" name="q3" value="true" class="radiobuttons">En robot brugt i undervisningen<br>
+                <input type="radio" name="q3" value="false" class="radiobuttons">Et brætspil
+
+          </div>
+
+          <div class="question4">
+                <h2 class="boldheadline2">Hvad er KEDU?</h2>
+                <input type="radio" name="q4" value="true" class="radiobuttons">En læringsplatform for lærer<br>
+                <input type="radio" name="q4" value="false" class="radiobuttons">En hjemmeside hvor man kan dele billeder<br>
+                <input type="radio" name="q4" value="false" class="radiobuttons">En platform hvor børn kan spille spil
+          </div>
+
+          <div class="results">
+            <p id="resultsAnswers"> </p>
+
+          </div>
+
           <div class="">
-            <h1 class="boldheadline2">KIRSTEN ÆNDRER SIN UNDERVISNINGSFORM</h1>
+            <p id="svar"></p>
           </div>
-          <div class="">
-            <img src="assets/images/differentform.png" alt="children jumping">
-          </div>
-          <div>
-            <p>Kirsten tænker at eleverne ikke kan koncentrere sig fordi de har siddet ved
-              deres borde i for lang tid. Derfor beder hun sine elever om at rejse sig og ryste
-              med armene og benene. Efter de har gjort dette i et stykke tid, beder hun sig om at sætte sig igen,
-              og hun håber de bliver koncentreret, med uden held da børnene igen bliver ved at snakke og larme igen.
-            </p>
-          </div>
-          <div class="formkollega">
-            <button type="button" onclick="hideDifferentForm()">PRØV IGEN</button>
-          </div>
+
+          <button id="submit" onclick="return showResults()" type="submit">Submit</button>
+          <button id="nextstep" onclick="showFinalStep()">Næste</button>
+
+        </form>
+
+        <div class="results">
+          <p id="resultsAnswers"> </p>
+
         </div>
 
-        <div id="keducontent" class="contentboxes">
-          <div class="">
 
-            <p id="slogan">We believe in educating the world!</p>
-          </div>
-          <div>
-            <p>Efter en undervisningsdag er Kirsten hjemme.
-              Her begår hun sig på facebook, hvor hun ser et opslag fra Danmarks Lærerforening.
-              Det er et opslag som promovere for en platform ved navn KEDU som er et fællesskab for lærer
-              og et læringsredskab for robotten KUBO som er en robot da formidler tunge emner ned til simpel læring.
-              Kirsten klikker på ‘HØR MERE’.
-            </p>
-            <img src="assets/images/keduimage.png" alt="kedu logo">
-          </div>
-          <div class="closebuttons">
-            <button type="button" name="closeoption" id="hearmore"><a href = "http://google.dk">HØR MERE</a></button>
-          </div>
+      </section>
+
+      <section id="finalstep">
+        <div class="">
+          <video controls muted autoplay >
+            <source src="assets/video/kedu.mp4" type="video/mp4">
+          </video>
         </div>
+        <div class="final">
+          <h1 class="boldheadline1">MALENE HAR GENVUNDET SIN HUKOMMELSE, TAKKET VÆRE DIN HJÆLP <br> Her er hvad hun har at fortælle: </h1>
+        </div>
+
+        <div class="paragraphcontainer2">
+          <p>I år 2037 forventes der er 47% af jobs vil
+          være overtaget af kunstig intelligence eller
+          robotter. Derfor ønsker KUBO at forberede
+          folkeskoleelever i en tidlig alder ved at
+          formidle komplekse emner som kodning.
+          Dette sker ved hjælp af robotten KUBO og
+          tagtiles systemet.<br> <br>
+          </p>
+        </div>
+
+        <div class="">
+          <img src="assets/images/KUBO.gif" alt="kubo animated gif" id="kubogif">
+        </div>
+
+        <div class="paragraphcontainer2" id="italicp">
+          <p>
+          Det er let for eleverne at arbejde med KUBO.
+          De får hurtigt en god fornemmelse af at lykkes også selvom de ofte er
+          nødt til at prøve sig frem flere gange. Det er dejligt at få den legende tilgang
+          ind i undervisningen. - Bruger af KUBO <br> <br>
+          </p>
+        </div>
+
+        <div class="paragraphcontainer2">
+          <p>
+          For hjælpe folkeskolelærer med at integrere KUBO bedre ind i undervisningensforløbet,
+          kan der på læringsplatformen KEDU findes lektionsplaner, materialer og instrukser på hvordan KUBO bruges.
+          </p>
+        </div>
+
+        <div id="signupdiv">
+          <button id="signup"><a href="http://ehoulby.com/KEDU%20community/index.html">Tilmeld dig her!</a></button>
+        </div>
+
+
       </section>
     </main>
-
-
   </body>
 </html>
